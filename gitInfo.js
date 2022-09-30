@@ -10,6 +10,7 @@
 */
 
 //CODE HERE
+let gitDefinition = " a program created to save, commit programming changes, and upload projects "
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -18,6 +19,7 @@
 */
 
 //CODE HERE
+let gitHubDefinition = 'a website that has cloud storage, acts as a resume, and allows you to work on projects with others.'
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -26,7 +28,7 @@
 */
 
 //CODE HERE
-
+let gitInitDefinition = 'initialize a local repo right here in this folder'
 //////////////////PROBLEM 4////////////////////
 /*
     Create a variable called 'gitCloneDefinition'.  
@@ -34,6 +36,7 @@
 */
 
 //CODE HERE
+let gitCloneDefinition = 'a duplicate of whatever file/folder you are on'
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -42,6 +45,7 @@
 */
 
 //CODE HERE
+let gitStatusDefinition = 'tell me about this repo/tells about the repo you are on'
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -65,6 +69,8 @@
 
 //CODE HERE
 
+let gitCommitDefinition = 'create a snapshot of the files i am tracking'
+
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -73,3 +79,4 @@
 */
 
 //CODE HERE
+let gitPushDefinition = 'publish to GitHub'
