@@ -93,6 +93,7 @@ let gitAddCode = 'git add .'
 //CODE HERE
 
 let gitCommitDefinition = 'create a snapshot of the files i am tracking'
+let gitCommitCode = 'git commit -m'
 
 
 //////////////////PROBLEM 8////////////////////
