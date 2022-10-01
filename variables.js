@@ -41,6 +41,12 @@ if (faveNum = 13){
 
 //CODE HERE
  
-for (i = 0; i < 5; i++){
-  console.log('13')
+//New Answer:
+for (let j = 0; j < 5; j++){
+  console.log(faveNum)
 }
+
+//Original Answer:
+//for (i = 0; i < 5; i++){
+  //console.log('13')
+//}
