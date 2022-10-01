@@ -51,65 +51,44 @@ const pinkAcres = [1, 5, 4, 2, 1, 5, 4]
     Log `totalAcres` to the console.
 */
 
-//function sumArray(array){
-    let sum = 0 // the sum is initialed to 0
 
 // CODE HERE
-function fujiAcres(array){
-    let sum = 0 // the sum is initialed to 0
-    for (let i = 0; i < 
-        fujiAcres.length; i += 1) {
+
+//New Answer:
+let totalAcres = 0
+
+for(let i = 0; i < fujiAcres.length; i++){
+    totalAcres += fujiAcres[i] + galaAcres[i] + pinkAcres[i]
+}
+console.log(totalAcres)
+
+//Original Answer:
+//function fujiAcres(array){
+    //let sum = 0 // the sum is initialed to 0
+    //for (let i = 0; i < 
+        //ujiAcres.length; i += 1) {
         // take every item in the array and add it to sum variable
-        sum += array[i]
+        //sum += array[i]
 
-function galaAcres(array){
-    let sum2 = 0 // the sum is initialed to 0
-        for (let z = 0; z < 
-            galaAcres.length; z += 1) {
+//function galaAcres(array){
+    //let sum2 = 0 // the sum is initialed to 0
+        //for (let z = 0; z < 
+            //galaAcres.length; z += 1) {
             // take every item in the array and add it to sum variable
-            sum2 += array[z]
+            //sum2 += array[z]
 
-function pinkAcres(array){
-    let sum3 = 0 // the sum is initialed to 0
-            for (let y = 0; y < 
-                    fujiAcres.length; y += 1) {
+//function pinkAcres(array){
+    //let sum3 = 0 // the sum is initialed to 0
+            //for (let y = 0; y < 
+                    //fujiAcres.length; y += 1) {
                     // take every item in the array and add it to sum variable
-                    sum3 += array[y]           
+                    //sum3 += array[y]           
 
 
-
-
-/*
-fugiSum = fujiAcres.reduce((accumulator, value)=> {
-    return accumulator + value;
-}, 0); 
-console.log('fugiTotal',fugiSum)
-
-galaSum = galaAcres.reduce((accumulator, value)=> {
-    return accumulator + value;
-}, 0); 
-console.log('galaTotal',galaSum)
-
-pinkSum = pinkAcres.reduce((accumulator, value)=> {
-    return accumulator + value;
-}, 0); 
-console.log('pinkTotal',pinkSum)
-
-console.log(pinkSum + galaSum + fugiSum)
-
-let totalAcres = 63
-
-//const arr = [5, 15, 45];
-
-//const sum = arr.reduce((accumulator, value) => {
-  //return accumulator + value;
-//}, 0);
-
-//console.log(sum); // 👉️ 65
 /*
 
 // I'll be 100% honest and admit that I wasn't sure how to complete this problem so I looked up 
-//everal solutions on the web. 
+//several solutions on the web. 
 
 
 // PROBLEM 2
@@ -126,9 +105,14 @@ let totalAcres = 63
 
 // CODE HERE
  
+//New Answer:
+let averageDailyAcres = totalAcres / 7
+console.log(averageDailyAcres)
 
+
+//Original Answer:
 //used calculator to determine the average
-averageDailyAcres = 3
+//let averageDailyAcres = 3
 
 
 
@@ -171,10 +155,18 @@ let days = 0
 //add 1 to the `days` variable
 //- subtract your daily average from the number of acres left
 
-while (acresLeft > days) {
-    days++
-    //console.log(acresLeft, days)
+//New Answer:
+while (acresLeft > 0){
+    days++ 
+    acresLeft -= averageDailyAcres
 }
+console.log(days)
+
+//Original Answer:
+//while (acresLeft > days) {
+    //days++
+    //console.log(acresLeft, days)
+//}
 
 
 // PROBLEM 4
@@ -203,17 +195,33 @@ while (acresLeft > days) {
 
 // CODE HERE
 
-let fujiTons = fujiAcres.slice(0, 7)
+//New Answer:
+
+let fujiTons = []
+let galaTons = []
+let pinkTons = []
+
+for(let j = 0; j < fujiAcres.length; j++){
+    fujiTons.push(fujiAcres[j] * 6.5)
+    galaTons.push(galaAcres[j] * 6.5)
+    pinkTons.push(pinkAcres[j] * 6.5)
+}
+console.log(fujiTons)
+console.log(galaTons)
+console.log(pinkTons)
+
+//Original Answer: 
+//let fujiTons = fujiAcres.slice(0, 7)
     //console.log('fugitons',fujiTons)
     
     //for(j = fujiTons[0] + 6.5 * ; j < fujiTons.length, j++
     
 
 
-let galaTons = galaAcres.slice(0,7)
+//let galaTons = galaAcres.slice(0,7)
     //console.log('galatons', galaTons)
 
-let pinkTons = pinkAcres.slice(0,7)
+//let pinkTons = pinkAcres.slice(0,7)
     //console.log('pinktons', pinkTons)
 
 // Wasn't sure how to complete this one and ended up just writing on paper and using a calculator. 
@@ -239,13 +247,28 @@ let pinkTons = pinkAcres.slice(0,7)
 
 // CODE HERE 
 
+//New Answer:
+let fujiPounds = 0
+let galaPounds = 0
+let pinkPounds = 0
+
+for(let k = 0; k < fujiTons.length; k++){
+    fujiPounds += fujiTons[k] * 2000
+    galaPounds += galaTons[k] * 2000
+    pinkPounds += pinkTons[k] * 2000
+}
+console.log(fujiPounds)
+console.log(galaPounds)
+console.log(pinkPounds)
+
+//Original Answer:
 //used calculator
 
- let fujiPounds = 214289.3
+ //let fujiPounds = 214289.3
  //97.2 Tons
- let galaPounds = 372581
+ //let galaPounds = 372581
  //169 Tons
- let pinkPounds = 315481.5
+ //let pinkPounds = 315481.5
  //143.1 Tons
 
 
@@ -273,22 +296,29 @@ const galaPrice = .64
 const pinkPrice = .55
 // CODE HERE
 
-let fugiProfit = fujiPounds * .89
-    console.log(fugiProfit)
+//New Answer: 
 
-let galaProfit = galaPounds * .64
-    console.log(fugiProfit) 
+let Galaprofit = galaPrice * galaPounds
+let Fujiprofit = fujiPrice * fujiPounds
+let Pinkprofit = pinkPrice * pinkPounds
+
+console.log(Galaprofit)
+console.log(Fujiprofit)
+console.log(Pinkprofit)
+
+//Original Answer:
+//let fugiProfit = fujiPounds * .89
+    //console.log(fugiProfit)
+
+//let galaProfit = galaPounds * .64
+    //console.log(fugiProfit) 
     
-let pinkProfit = pinkPounds * 55
-    console.log(pinkProfit)
+//let pinkProfit = pinkPounds * 55
+    //console.log(pinkProfit)
 
 // let galaProfit =
 // let pinkProfit =
 //let fujiProfit = 
-
-
-
-
 
 // PROBLEM 7
 
@@ -301,5 +331,12 @@ let pinkProfit = pinkPounds * 55
 */
 
 // CODE HERE
-let totalProfit = pinkProfit + fugiProfit + galaProfit
+
+//New Answer:
+let totalProfit = Pinkprofit + Fujiprofit + Galaprofit
 console.log(totalProfit)
+
+
+//Original Answer:
+//let totalProfit = pinkProfit + fugiProfit + galaProfit 
+//console.log(totalProfit)
