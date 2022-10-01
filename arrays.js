@@ -26,10 +26,15 @@ const numbers = [1, 2, 3, 4, 5]
 
 //CODE HERE
 
-let mNums = numbers.slice(1,4)
+//New Answer:
+const middleNums = numbers.splice(1,3)
+console.log(middleNums)
+
+//Original Answer: 
+//let mNums = numbers.slice(1,4)
   //console.log(mNums)
-let middleNums = []
-  middleNums.push(mNums)
+//let middleNums = []
+  //middleNums.push(mNums)
     //console.log(middleNums)
 
 
@@ -48,12 +53,26 @@ const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352]
 
 // CODE HERE
 
+//New Answer: 
 let answers = []
-for(i = bigOrSmallArray[0]; i < bigOrSmallArray.length; i++){
-  if (i > 100){
-    answers.push(i,'big')
-  } if (i <= 100){
-    answers.push(i,'small')
+
+for (let i = 0; i < bigOrSmallArray.length; i++){
+  if(bigOrSmallArray[i] > 100){
+    answers.push('big')
+  } else {
+    answers.push('small')
   }
 }
 console.log(answers)
+
+
+//Original Answer
+//let answers = []
+//for(i = bigOrSmallArray[0]; i < bigOrSmallArray.length; i++){
+  //if (i > 100){
+    //answers.push(i,'big')
+  //} if (i <= 100){
+    //.concat.answers.push(i,'small')
+  //}
+//}
+//console.log(answers)
