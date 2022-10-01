@@ -10,7 +10,12 @@
 */
 
 //CODE HERE
-let gitDefinition = " a program created to save, commit programming changes, and upload projects "
+
+//New Answer:
+let gitDefinition = 'Open source version control software that allows for team collab.'
+
+//Original Answer:
+//let gitDefinition = " a program created to save, commit programming changes, and upload projects "
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -19,7 +24,12 @@ let gitDefinition = " a program created to save, commit programming changes, and
 */
 
 //CODE HERE
-let gitHubDefinition = 'a website that has cloud storage, acts as a resume, and allows you to work on projects with others.'
+
+//New Answer:
+let gitHubDefinition = 'Service/website that gives cloud storage and allows collab on git projects.'
+
+//Original Answer:
+//let gitHubDefinition = 'a website that has cloud storage, acts as a resume, and allows you to work on projects with others.'
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -28,7 +38,7 @@ let gitHubDefinition = 'a website that has cloud storage, acts as a resume, and 
 */
 
 //CODE HERE
-let gitInitDefinition = 'initialize a local repo right here in this folder'
+let gitInitDefinition = 'Initialize a local repo right here in this folder.'
 //////////////////PROBLEM 4////////////////////
 /*
     Create a variable called 'gitCloneDefinition'.  
@@ -36,7 +46,12 @@ let gitInitDefinition = 'initialize a local repo right here in this folder'
 */
 
 //CODE HERE
-let gitCloneDefinition = 'a duplicate of whatever file/folder you are on'
+
+//New Answer:
+let gitCloneDefinition = 'Saves a repo based on a URL at the locations your terminal is currently pointed to.'
+
+//Original Answer:
+//let gitCloneDefinition = 'a duplicate of whatever file/folder you are on'
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -45,7 +60,12 @@ let gitCloneDefinition = 'a duplicate of whatever file/folder you are on'
 */
 
 //CODE HERE
-let gitStatusDefinition = 'tell me about this repo/tells about the repo you are on'
+
+//New Answer:
+let gitStatusDefinition = 'Shows the status of the repo you are in.'
+
+//Original Answer:
+//let gitStatusDefinition = 'tell me about this repo/tells about the repo you are on'
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -57,6 +77,9 @@ let gitStatusDefinition = 'tell me about this repo/tells about the repo you are 
 */
 
 //CODE HERE
+
+let gitAddDefinition = 'stages, selects certain file changes for commiting'
+let gitAddCode = 'git add .'
 
 //////////////////PROBLEM 7////////////////////
 /*
